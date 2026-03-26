@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JAMSObjects>
+  <job
+    name="Core"
+    method="PowerShellCore">
+    <description><![CDATA[]]></description>
+    <source><![CDATA[Write-Host "PowerShell is Core!"]]></source>
+    <properties />
+    <elements />
+    <parameters>
+      <parameter
+        name="JAMSTraceLevel"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="1" />
+        </properties>
+      </parameter>
+      <parameter
+        name="PSExecutionPolicyPreference"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="2" />
+        </properties>
+      </parameter>
+      <parameter
+        name="ErrorActionPreference"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="3" />
+        </properties>
+      </parameter>
+      <parameter
+        name="FolderParam"
+        dataType="Text"
+        length="0"
+        inherited="True">
+        <properties />
+      </parameter>
+    </parameters>
+    <acl>
+      <ace
+        identifier="ATTIC\john"
+        inheritcontainer="False"
+        inheritobject="False"
+        inheritonly="False"
+        access="Manage,Change,Inquire,Delete,Submit,Debug,Monitor,Abort,Control" />
+    </acl>
+  </job>
+</JAMSObjects>

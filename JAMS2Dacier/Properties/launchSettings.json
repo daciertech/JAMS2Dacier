@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "JAMS2Dacier": {
+      "commandName": "Project",
+      "commandLineArgs": "convert ..\\..\\..\\..\\JAMS2Dacier.Tests\\TestExtract\\ ..\\..\\..\\..\\JAMS2Dacier.Tests\\TestResults\\Actual\\"
+    },
+    "Extract": {
+      "commandName": "Project",
+      "commandLineArgs": "extract localhost ..\\..\\..\\..\\JAMS2Dacier.Tests\\TestExtract\\ "
+    }
+  }
+}

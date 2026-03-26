@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="JAMS2Dacier.Tests/JAMS2Dacier.Tests.csproj" Id="cd02787f-9ece-486c-ab61-9a6f8601f737" />
+  <Project Path="JAMS2Dacier/JAMS2Dacier.csproj" />
+</Solution>

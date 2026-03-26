@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JAMSObjects>
+  <job
+    name="PowerShell"
+    method="PowerShell">
+    <description><![CDATA[A Windows PowerShell job]]></description>
+    <source><![CDATA[Write-Host "Date parameter is {DateParam}"
+Write-Host "Int parameter is {IntParam}"]]></source>
+    <properties />
+    <elements />
+    <parameters>
+      <parameter
+        name="JAMSTraceLevel"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="1" />
+        </properties>
+      </parameter>
+      <parameter
+        name="PSExecutionPolicyPreference"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="2" />
+        </properties>
+      </parameter>
+      <parameter
+        name="ErrorActionPreference"
+        dataType="Text"
+        length="20"
+        inherited="True">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="3" />
+        </properties>
+      </parameter>
+      <parameter
+        name="TextParam"
+        dataType="Text"
+        length="0"
+        inherited="False">
+        <properties>
+          <property
+            name="Hide"
+            typename="System.Boolean"
+            value="true" />
+          <property
+            name="Prompt"
+            typename="System.String"
+            value="Enter a line:" />
+          <property
+            name="Required"
+            typename="System.Boolean"
+            value="true" />
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="4" />
+          <property
+            name="Uppercase"
+            typename="System.Boolean"
+            value="true" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="The rain in spain" />
+        </properties>
+      </parameter>
+      <parameter
+        name="DateParam"
+        dataType="Date"
+        length="8"
+        inherited="False">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="5" />
+          <property
+            name="DefaultFormat"
+            typename="System.String"
+            value="yyyy-MM-dd" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="tomorrow" />
+        </properties>
+      </parameter>
+      <parameter
+        name="IntParam"
+        dataType="Integer"
+        length="0"
+        inherited="False">
+        <properties>
+          <property
+            name="Prompt"
+            typename="System.String"
+            value="What is the answer to life?" />
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="6" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="42" />
+        </properties>
+      </parameter>
+      <parameter
+        name="DateTimeParam"
+        dataType="DateTime"
+        length="8"
+        inherited="False">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="7" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="" />
+        </properties>
+      </parameter>
+      <parameter
+        name="TimeParam"
+        dataType="Time"
+        length="8"
+        inherited="False">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="8" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="" />
+        </properties>
+      </parameter>
+      <parameter
+        name="FolderParam"
+        dataType="Text"
+        length="0"
+        inherited="True">
+        <properties />
+      </parameter>
+    </parameters>
+    <acl>
+      <ace
+        identifier="ATTIC\john"
+        inheritcontainer="False"
+        inheritobject="False"
+        inheritonly="False"
+        access="Manage,Change,Inquire,Delete,Submit,Debug,Monitor,Abort,Control" />
+    </acl>
+  </job>
+</JAMSObjects>

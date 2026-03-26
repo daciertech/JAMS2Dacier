@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JAMSObjects>
+  <folder
+    name="Sequences">
+    <description><![CDATA[]]></description>
+    <properties>
+      <property
+        name="ExecuteAs"
+        typename="MVPSI.JAMS.CredentialReference"
+        value="Samples" />
+    </properties>
+    <elements />
+    <acl>
+      <ace
+        identifier="ATTIC\john"
+        inheritcontainer="False"
+        inheritobject="False"
+        inheritonly="False"
+        access="Change,Inquire,Manage,AddJobs,ChangeJobs,InquireJobs,DeleteJobs,Submit,Debug,Monitor,Abort,Delete,Control" />
+    </acl>
+  </folder>
+</JAMSObjects>

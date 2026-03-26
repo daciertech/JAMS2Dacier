@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JAMSObjects>
+  <folder
+    name="CLI">
+    <description><![CDATA[]]></description>
+    <properties />
+    <elements />
+    <parameters>
+      <parameter
+        name="FolderParam"
+        dataType="Text"
+        length="0"
+        inherited="False">
+        <properties>
+          <property
+            name="Sequence"
+            typename="System.Int32"
+            value="1001" />
+          <property
+            name="DefaultValue"
+            typename="System.String"
+            value="Defined on the CLI folder" />
+        </properties>
+      </parameter>
+    </parameters>
+    <acl>
+      <ace
+        identifier="ATTIC\john"
+        inheritcontainer="False"
+        inheritobject="False"
+        inheritonly="False"
+        access="Change,Inquire,Manage,AddJobs,ChangeJobs,InquireJobs,DeleteJobs,Submit,Debug,Monitor,Abort,Delete,Control" />
+    </acl>
+  </folder>
+</JAMSObjects>

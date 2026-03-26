@@ -1,0 +1,32 @@
+[
+    {
+        "MethodName": "Command",
+        "TypeName": "Dacier.CliJobs.CliJob, Dacier.CliJobs",
+        "Shell": "cmd",
+        "Args": [ ]
+    },
+    {
+        "MethodName": "UnixScript",
+        "TypeName": "Dacier.CliJobs.CliJob, Dacier.CliJobs",
+        "Shell": "",
+        "Args": [ ]
+    },
+    {
+        "MethodName": "UnixShell",
+        "TypeName": "Dacier.CliJobs.CliJob, Dacier.CliJobs",
+        "Shell": "base",
+        "Args": [ "-NoLogo", "-NoInteractive" ]
+    },
+    {
+        "MethodName": "PowerShell",
+        "TypeName": "Dacier.CliJobs.CliJob, Dacier.CliJobs",
+        "Shell": "powershell",
+        "Args": [ "-NoLogo", "-NoInteractive" ]
+    },
+    {
+        "MethodName": "PowerShellCore",
+        "TypeName": "Dacier.CliJobs.CliJob, Dacier.CliJobs",
+        "Shell": "pwsh",
+        "Args": [ "-NoLogo", "-NoInteractive" ]
+    }
+]
