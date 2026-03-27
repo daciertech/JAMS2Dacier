@@ -1,13 +1,11 @@
 # JAMS2Dacier
 
 This repository will help you convert JAMS objects to Dacier Scheduler objects.
-This utility is packages as a dotnet tool so you can simply install it and run it.
+This utility is packaged as a dotnet tool so you can simply install it and run it.
 Or, if you want to customize the conversion, you can clone the repository and build it yourself.
 
 ## Before You Start
-You can use this tool without a Dacier Scheduler instance but you won't be able to apply the converted YAML files to a Dacier Scheduler instance until you have one set up.
-You might want to use this tool before you create a Dacier Scheduler instance to gauge how much work it will be to convert your JAMS objects to Dacier Scheduler objects.
-Our converter does not support all JAMS objects or execution methods.
+Make sure that you have a Dacier Scheduler instance configured and ready to go.
 
 You can find instructions on how to set up a Dacier Scheduler instance in the Dacier Scheduler Getting Started repository at https://github.com/daciertech/SchedulerStartup.
 
