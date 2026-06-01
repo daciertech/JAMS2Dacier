@@ -72,7 +72,7 @@ jobs:
     - name: Get Version
       shell: pwsh
       run: |
-        $versionInfo = (Get-Item bin\Release\net10.0\JAMS2Dacier.dll).VersionInfo
+        $versionInfo = (Get-Item JAMS2Dacier\bin\Release\net10.0\JAMS2Dacier.dll).VersionInfo
         $formattedVersion = "{0}.{1}.{2}" -f $versionInfo.ProductMajorPart, $versionInfo.ProductMinorPart, $versionInfo.ProductBuildPart
         write-host "Version is: $formattedVersion"
         echo "version=$formattedVersion" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf-8 -Append
