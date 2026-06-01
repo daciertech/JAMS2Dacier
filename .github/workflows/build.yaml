@@ -88,5 +88,5 @@ jobs:
     
     - name: NuGet push JAMS2Dacier
       shell: bash
-      run: dotnet nuget push JAMS2Dacier/bin/Release/net10.0/Dacier.JAMS2Dacier.${{ env.version }}.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push JAMS2Dacier/bin/Release/Dacier.JAMS2Dacier.${{ env.version }}.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://api.nuget.org/v3/index.json
 
