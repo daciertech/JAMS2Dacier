@@ -19,12 +19,13 @@
     <PackageTags></PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Extract-Definitions.ps1" />
     <None Remove="method-mapping.json" />
-    <None Include="ReadMe.md" Pack="true" PackagePath="\"/>
+    <None Include="ReadMe.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,12 +38,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dacier.CliJobs" Version="1.1.6" />
-    <PackageReference Include="Dacier.Scheduler.Entities" Version="1.7.16" />
-    <PackageReference Include="Dacier.Workflows.Core" Version="1.1.4" />
-    <PackageReference Include="Dacier.Workflows.PowerShell" Version="1.1.4" />
-    <PackageReference Include="System.CommandLine" Version="2.0.5" />
-    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+    <PackageReference Include="Dacier.CliJobs" Version="1.1.11" />
+    <PackageReference Include="Dacier.Scheduler.Entities" Version="1.7.49" />
+    <PackageReference Include="Dacier.Workflows.Core" Version="1.1.7" />
+    <PackageReference Include="Dacier.Workflows.PowerShell" Version="1.1.7" />
+    <PackageReference Include="System.CommandLine" Version="2.0.8" />
+    <PackageReference Include="YamlDotNet" Version="18.0.0" />
   </ItemGroup>
 
 </Project>
