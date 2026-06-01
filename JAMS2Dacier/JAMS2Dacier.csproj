@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <Version>1.0.1</Version>
     <AssemblyVersion>1.0.1</AssemblyVersion>
     <Description>
       The JAMS2Dacier tool helps convert JAMS object to the Dacier Scheduler.
