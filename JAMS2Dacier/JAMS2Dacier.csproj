@@ -38,10 +38,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dacier.CliJobs" Version="1.1.11" />
+    <PackageReference Include="Dacier.CliJobs" Version="1.1.12" />
     <PackageReference Include="Dacier.Scheduler.Entities" Version="1.7.49" />
-    <PackageReference Include="Dacier.Workflows.Core" Version="1.1.7" />
-    <PackageReference Include="Dacier.Workflows.PowerShell" Version="1.1.7" />
+    <PackageReference Include="Dacier.Workflows.Core" Version="1.1.8" />
+    <PackageReference Include="Dacier.Workflows.PowerShell" Version="1.1.8" />
     <PackageReference Include="System.CommandLine" Version="2.0.8" />
     <PackageReference Include="YamlDotNet" Version="18.0.0" />
   </ItemGroup>
