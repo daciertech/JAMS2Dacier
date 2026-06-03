@@ -26,28 +26,22 @@ try {
     # Recursively process each item
     Get-ChildItem -Path JD:\ -Recurse | Where-Object { $_ -is [MVPSI.JAMS.Job] -or $_ -is [MVPSI.JAMS.Folder] } | ForEach-Object {
         $item = Get-Item $_.PSPath
-        # Compute relative path from RootPath
-        $relativePath = $item.QualifiedName.TrimStart('\')
-        $exportDir = Join-Path $ExportPath (Split-Path $relativePath -Parent)
-        # Ensure export directory exists
-        if (-not (Test-Path $exportDir)) {
-            New-Item -Path $exportDir -ItemType Directory -Force | Out-Null
+        if ($item -ne $null -and $item.QualifiedName -ne $null) {
+            # Compute relative path from RootPath
+            $relativePath = $item.QualifiedName.TrimStart('\')
+            $exportDir = Join-Path $ExportPath (Split-Path $relativePath -Parent)
+            # Ensure export directory exists
+            if (-not (Test-Path $exportDir)) {
+                New-Item -Path $exportDir -ItemType Directory -Force | Out-Null
+            }
+            $exportFile = Join-Path $exportDir ($item.Name + ".xml")
+            Export-JAMSXML -InputObject $item -Path $exportFile
         }
-        $exportFile = Join-Path $exportDir ($item.Name + ".xml")
-        Export-JAMSXML -InputObject $item -Path $exportFile
     }
 }
 catch {
-    Write-Error "An error occurred: $_ <"
-    $line   = $_.InvocationInfo.ScriptLineNumber
-    $column = $_.InvocationInfo.OffsetInLine
-    $script = $_.InvocationInfo.ScriptName
-    $code   = $_.InvocationInfo.Line
-
-    Write-Error "Script: $script"
-    Write-Error "Line: $line"
-    Write-Error "Column: $column"
-    Write-Error "Code: $code"
+    Write-Error "An error occurred: $_"
+    Write-Error "At: $($_.InvocationInfo.PositionMessage)"
 
     Exit 1
 }
